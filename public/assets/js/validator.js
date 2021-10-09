@@ -9,7 +9,6 @@ function Validator(options) {
             }
             element = element.parentElement;
         }
-
     }
 
     function validate(inputElement, rule) {
@@ -59,7 +58,7 @@ function Validator(options) {
                 // submit form with ajax
                 if (typeof options.onSubmit === 'function') {
                     let enableInputs = formElement.querySelectorAll('[name]:not([disabled])');
-                    console.log('enableInputs: ', enableInputs);
+                 
                     const formValues = Array.from(enableInputs).reduce((values, input) => {
                         switch (input.type) {
                             case 'checkbox':
@@ -81,7 +80,7 @@ function Validator(options) {
                             default:
                                 values[input.name] = input.value;
                         }
-                        console.log('values: ', values);
+
                         return values;
                     }, {});
 

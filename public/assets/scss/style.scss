@@ -18,6 +18,62 @@
     background: linear-gradient(to top right,#08aeea 0%,#b721ff 100%);
 }
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &.invalid {
+        .form-control {
+            border-color: #f33a58;
+        }
+        
+        .form-message {
+            margin-top: 5px;
+            color: #f33a58;
+        }
+    }
+}
+
+.form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+
+.form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.form-submit {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 20px;
+    color: #fff;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 3px;
+    background-color: #08aeea;
+    border: 1px solid #08aeea;
+    margin-top: 15px;
+}
+
+.form-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #41afb6;
+}
+
+// register form
 .card.register-form-wrapper {
     border-radius: 5px;
     width: 600px;
@@ -41,57 +97,39 @@
 
     .card-body {
         padding: 25px 35px 40px;
+    }
+}
 
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 20px;
+// login form
+.card.login-form-wrapper {
+    border-radius: 5px;
+    width: 450px;
+    background-color: #fff;
+    margin: 40px 0;
+    border-top: 10px solid #79a6fe;
+    border-bottom: 10px solid #8BD17C;
 
-            &.invalid {
-                .form-control {
-                    border-color: #f33a58;
-                }
-                
-                .form-message {
-                    margin-top: 5px;
-                    color: #f33a58;
-                }
+    .card-heading {
+        margin: 30px 0 10px;
+        text-align: center;
+
+        .title {
+            color: #1e96f0;
+            font-size: 1.5rem;
+
+            span {
+                color: #41afb6;
             }
         }
+    }
 
-        .form-label {
-            font-weight: 700;
-            padding-bottom: 6px;
-            line-height: 1.8rem;
-            font-size: 1.2rem;
-        }
-
-        .form-control {
-            height: 40px;
-            padding: 8px 12px;
-            border: 1px solid #ccc;
-            border-radius: 2px;
-            font-size: 1.1rem;
-            outline: none;
-        }
-
-        .form-submit {
-            cursor: pointer;
-            width: 100%;
-            padding: 10px 20px;
-            color: #fff;
-            outline: none;
-            font-size: 1.2rem;
-            font-weight: 600;
-            border-radius: 3px;
-            background-color: #08aeea;
-            border: 1px solid #08aeea;
-            margin-top: 15px;
-        }
+    .card-body {
+        padding: 25px 35px 40px;
     }
 }
 
 @media screen and (max-width: 767px) {
+    .card.login-form-wrapper,
     .card.register-form-wrapper {
         width: 80%;
     }
