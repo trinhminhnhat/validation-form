@@ -5,4 +5,7 @@ Build a simple validator library
 [**https://trinhminhnhat.github.io/validation-form/**](https://trinhminhnhat.github.io/validation-form/)
 
 ## Author
-[**Trinh Minh Nhat**](https://github.com/trinhminhnhat)
+[**Trịnh Minh Nhật**](https://github.com/trinhminhnhat)
+
+## References
+[**https://fullstack.edu.vn/**](https://fullstack.edu.vn/)
